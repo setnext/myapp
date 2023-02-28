@@ -65,6 +65,10 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# IDE
+.angular/
+.angular/cache/
+
 # Yarn Integrity file
 .yarn-integrity
 
