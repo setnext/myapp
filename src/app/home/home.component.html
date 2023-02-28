@@ -1,0 +1,68 @@
+<p>home works!</p>
+
+
+<a routerLink="/electronics">Click Here</a>
+
+<hr>
+
+<button (click)="saveData(productName.value,price.value,quantity.value)" class="btn btn-primary">Save Data</button>
+
+<!-- <button (click)="CalculateTotal()" class="btn btn-primary">Display In Console</button> -->
+
+
+<hr>
+
+<div>
+
+    <h2>Item Saved this many times: {{i}}</h2>
+</div>
+
+<div>
+    <label>Name</label>
+    <input #productName type="text" placeholder="Enter the Product Name">
+</div>
+
+<div>
+    <label>Price</label>
+    <input #price type="number" placeholder="Enter the Price">
+</div>
+
+<div>
+    <label>Quantity</label>
+    <input #quantity type="number" placeholder="Enter the Price">
+</div>
+
+<div>
+
+    <div class="row">
+
+        <div *ngFor="let product of myProducts" class="col-md-4">
+
+            <p>Product Name: {{product.name}}</p>
+            <p>Product Name: {{product.price}}</p>
+            <p>Product Name: {{product.quatity}}</p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div>
+
+    <div class="row">
+
+        <div *ngFor="let data of myData" class="col-md-4">
+
+            <i class="fa fa-facebook-f ms-2"></i>
+
+            {{data}}
+
+        </div>
+
+
+    </div>
+
+</div>
